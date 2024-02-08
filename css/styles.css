@@ -99,7 +99,7 @@ input + label:after {
 }
 
 input:checked + label:after{
-  content: "Psst! Here is a QR code to my instagram";
+  content: "QR code to my instagram";
   font-size: 20px;
 }
 
