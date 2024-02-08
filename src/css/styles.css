@@ -1,0 +1,132 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+#bg-video{
+  position: fixed;
+  min-height: 100%;
+  width: 100%;
+  margin:0;
+  padding:0;
+  z-index: -500;
+}
+
+#lighthouse{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  aspect-ratio: 1.77;
+  width: 100%;
+}
+
+#outter-shadow{
+  position: fixed;
+  z-index: -499;
+  box-shadow: 0 0 400px black inset;
+  height: 100%;
+  width: 100%;
+}
+
+.center{
+  width: 53%;
+  margin: auto;
+  text-align: center;
+}
+
+.text-shadow{
+  text-shadow: 20px 10px 14px black;
+}
+
+#welcome{
+  font-size: 30px;
+  padding-top: 15%;
+  font-weight: 100;
+}
+
+#company-name{
+  font-size: 90px;
+  letter-spacing: 4px;
+  padding-top: 20%;
+}
+
+#company-desc{
+  font-size: 30px;
+  padding-bottom: 4%;
+  font-weight: 100;
+}
+
+a, a:hover{
+  color: white;
+}
+
+#email-box{
+  border-radius: 25px;
+  padding-left: 14px;
+  text-align: center;
+  width: 350px;
+  font-weight:bold;
+  font-size: 30px;
+  border:none;
+}
+#email-box:focus,#email-submit-btn:focus{
+  outline:none;
+}
+
+#email-submit-btn{
+  border-radius: 25px;
+  font-size: 30px;
+  border:none;
+  margin-top: 10px;
+  min-width: 144px;
+}
+
+/* button attempt below */
+
+input:checked + label + div {
+  display: none;
+}
+
+input + label:after {
+  content: "Close";
+  font-size: 20px;
+}
+
+input:checked + label:after{
+  content: "Psst! Here is a QR code to my instagram";
+  font-size: 20px;
+}
+
+#social-button{
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#qr-code{
+  width: 360px;
+  padding-bottom: 40px;
+}
+
+.box-contents{
+  width: 400px;
+  height: 200px;
+}
+
+/* Hide scrollbar */
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+html{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
