@@ -8,6 +8,10 @@ body{
   background-color: black;
 }
 
+h1 {
+  font-size: 5.5rem;
+}
+
 #bg-video{
   position: fixed;
   min-height: 100%;
@@ -15,6 +19,7 @@ body{
   margin:0;
   padding:0;
   z-index: -500;
+  opacity: 60%;
 }
 
 #lighthouse{
@@ -35,7 +40,6 @@ body{
 }
 
 .center{
-  width: 53%;
   margin: auto;
   text-align: center;
 }
@@ -53,13 +57,12 @@ body{
 #company-name{
   font-size: 90px;
   letter-spacing: 4px;
-  padding-top: 20%;
+  padding-top: 16%;
+  padding-bottom: 26px;
 }
 
 #company-desc{
-  font-size: 30px;
-  padding-bottom: 4%;
-  font-weight: 100;
+  padding-bottom: 2%;
 }
 
 a, a:hover{
@@ -95,18 +98,16 @@ input:checked + label + div {
 
 input + label:after {
   content: "Close";
-  font-size: 20px;
+  font-size: 30px;
 }
 
 input:checked + label:after{
   content: "QR code to my instagram";
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #social-button{
-    font-size: 20px;
     display: inline-block;
-    padding-bottom: 20px;
     cursor: pointer;
 }
 
